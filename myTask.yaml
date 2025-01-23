@@ -1,0 +1,43 @@
+```
+brand: "Sonata"
+location : "Warehouse"
+
+parts:
+  - id: 101
+    name : "Engine"
+    price : $9000000
+    in_stock : yes
+    supplier : ["Ameer", "Hamza"]
+    description : |
+      This is a 4 cylinder engine
+      with 2.0L capacity
+  - id: 102
+    name : Gear Box
+    price : $500000
+    in_stock : no
+    supplier : ["Ali", "Kamran"]
+    description : >
+      This is a 6 speed gear box
+      with 2.0L capacity
+    
+warehouse_details:
+ address:
+    street : "Brooklyn 1"
+    city : "New York"
+    country : usa
+
+
+# parts with default suppliers
+default_supplier: &default_supplier "Supplier A":
+parts_with_default_supplier:
+   - id: 103
+     name : Tyres
+     price : 100000
+     in_stock : yes
+     supplicer : [*default_supplier]
+   - id: 104
+     name : "Brakes"
+     price : 50000
+     in_stock : no
+     supplier : [*default_supplier]
+```
