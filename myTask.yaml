@@ -1,3 +1,4 @@
+---
 brand: "Sonata"
 location: "Warehouse"
 
@@ -38,3 +39,4 @@ parts_with_default_supplier:
     price: 50000
     in_stock: no
     supplier: [*default_supplier]
+...
